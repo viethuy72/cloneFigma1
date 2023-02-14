@@ -2,13 +2,15 @@ const navbar = document.getElementById("navbar")
 const content = document.getElementById("content")
 const MenuIcon = document.querySelector("#menu_icon")
 MenuIcon.addEventListener("click",()=>{
-    if(navbar.classList.contains("active")){
-        navbar.classList.remove("active")
-        content.classList.add("active")
+    if(navbar.classList.contains("d-none")){
+        navbar.classList.remove("d-none")
+        content.classList.add("d-none")
+
     }
-    else if (content.classList.contains("active")){
-        content.classList.remove("active")
-        navbar.classList.add("active")
+    else if (content.classList.contains("d-none")){
+        content.classList.remove("d-none")
+        navbar.classList.add("d-none")
+
     }
 })
 
