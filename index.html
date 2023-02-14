@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-      <div class="navbar active" id="navbar">
+      <div class="navbar active navbar--desktop" id="navbar">
           <div class="navbar_header">
                   <img class="menu_icon" src="./images/Menu%20Icon.png" width="33" height="21" alt="">
               <div class="rectangle">
@@ -31,7 +31,7 @@
                   <label for="locationsInput">
                       <img src="./images/Vector.png" alt="">
                   </label>
-                  <input type="text" id="locationsInput" placeholder="Enter Locations" >
+                  <input type="text"  placeholder="Enter Locations" >
               </div>
               <div  class="navbar_date">
                   Date Range
@@ -40,7 +40,7 @@
                   <label for="datesInput">
                       <img src="./images/Date.png" alt="">
                   </label>
-                  <input type="text" id="datesInput" placeholder="Select Dates" >
+                  <input type="text"  placeholder="Select Dates" >
               </div>
           </div>
 <!--          toggle-->
@@ -170,18 +170,167 @@
                   </div>
               </div>
           </div>
+
+          <div class="navbar active navbar--mobile" id="navbar_mobile">
+              <div class="navbar_header">
+                  <img class="menu_icon" src="./images/Menu%20Icon.png" width="33" height="21" alt="">
+                  <div class="rectangle">
+                      <div class="country_icon">
+                          <img src="./images/English.png" alt="co anh">
+                      </div>
+                      <!--                  <span>English <img src="./images/DropdownIcon.png"></span>-->
+                      <select>
+                          <option>English  </option>
+                      </select>
+                  </div>
+              </div>
+              <!--          Location     and Date Range       -->
+              <div>
+                  <div  class="navbar_location">
+                      Location
+                  </div>
+                  <div class="navbar_input--location">
+                      <label for="locationsInput">
+                          <img src="./images/Vector.png" alt="">
+                      </label>
+                      <input type="text" id="locationsInput" placeholder="Enter Locations" >
+                  </div>
+                  <div  class="navbar_date">
+                      Date Range
+                  </div>
+                  <div class="navbar_input--dateRanger">
+                      <label for="datesInput">
+                          <img src="./images/Date.png" alt="">
+                      </label>
+                      <input type="text" id="datesInput" placeholder="Select Dates" >
+                  </div>
+              </div>
+              <!--          toggle-->
+              <div class="navbar_toggle">
+                  <div class="navbar_toggle--group1">
+                      <div class="navbar_toggle--text">
+                          VIP
+                      </div>
+                      <div class="navbar_toggle--icon">
+                          <div class="navbar_toggle--iconinside"></div>
+                      </div>
+
+                  </div>
+                  <div class="navbar_toggle--group2">
+                      <div class="navbar_toggle--text2">
+                          influencer
+                      </div>
+                      <div class="navbar_toggle--icon2">
+                          <div class="navbar_toggle--iconinside2"></div>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <!--    Company Type-->
+                  <div>
+                      <div  class="navbar_company">
+                          company type
+                      </div>
+                      <div class="navbar_company--group">
+                          <div class="navbar_company--staff">
+                              Staff Count
+                              <img src="./images/DropdownIcon.png" alt="">
+                          </div>
+                          <div class="navbar_company--staff">
+                              Revenue Vol.
+                              <img src="./images/DropdownIcon.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+                  <!--Button Search-->
+                  <div class="navbar_button">
+                      <button>Search</button>
+                  </div>
+                  <!-- line1-->
+                  <div class="navbar_line1">
+                      <img src="./images/Line%201.png">
+                  </div>
+                  <!--     Top Customers         -->
+                  <div class="customer">
+                      <div class="navbar_customer">
+                          Top customers
+                      </div>
+                      <div>
+                          <img src="./images/threeDot.png" alt="">
+                      </div>
+                  </div>
+                  <!--     avatar Ellip         -->
+                  <div class="avatar">
+                      <div class="navbar_avatar">
+                          <div> <img src="./images/Ellipse%201.png" alt=""></div>
+                          <span class="navbar_avatar--name">
+                          Ronald Richards
+                      </span>
+                      </div>
+                      <div class="navbar_avatar">
+                          <div> <img src="./images/Ellipse%202.png" alt=""></div>
+                          <span class="navbar_avatar--name">
+                          Ralph Edwards
+                      </span>
+                      </div>
+                      <div class="navbar_avatar">
+                          <div> <img src="./images/Ellipse%203.png" alt=""></div>
+                          <span class="navbar_avatar--name">
+                          Kristin Watson
+                      </span>
+                      </div>
+                      <div class="navbar_avatar">
+                          <div> <img src="./images/Ellipse%204.png" alt=""></div>
+                          <span class="navbar_avatar--name">
+                          Esther Howard
+                      </span>
+                      </div>
+                      <div class="navbar_avatar">
+                          <div> <img src="./images/Ellipse%205.png" alt=""></div>
+                          <span class="navbar_avatar--name">
+                          Danielle Lane
+                      </span>
+                      </div>
+                      <div class="navbar_avatar">
+                          <div> <img src="./images/Ellipse%206.png" alt=""></div>
+                          <span class="navbar_avatar--name">
+                          Robert Fox
+                      </span>
+                      </div>
+                      <div class="navbar_avatar">
+                          <div> <img src="./images/Ellipse%207.png" alt=""></div>
+                          <span class="navbar_avatar--name">
+                          Leslie Alexander
+                      </span>
+                      </div>
+                      <div class="view_more">
+                          <button>View More</button>
+                      </div>
+                  </div>
+                  <div class="footer">
+                      <div><img src="images/house.png" alt=""></div>
+                      <div><img src="images/mail.png" alt=""></div>
+                      <div><img src="images/shopping%20cart.png" alt=""></div>
+                      <div><img src="images/bell.png" alt=""></div>
+                      <div><img src="images/heart.png" alt=""></div>
+                      <div><img src="images/profile.png" alt=""></div>
+                  </div>
+              </div>
+          </div>
 <!------------------------------------------------Content---------------------------------------------->
 
           <div class="content" id="content">
                   <div class="grid-container">
-                  <div class="grid-item grid1">
-                      <div class="content_analytic">
-                          <div class="content_analytic--name">
+                  <div class="grid-item item">
+                      <div class="item_header">
+                          <div class="item_header_name">
                               analytics
                           </div>
-                          <div class="content_analytic--time">
-                              <p>1 Dec - 20 Jan</p>
-                              <img src="./images/DropdownIcon.png" alt="">
+                          <div class="item_header_toolbox">
+                              <div class="dropdown">
+                                  <p>1 Dec - 20 Jan</p>
+                                  <img src="./images/DropdownIcon.png" alt="">
+                              </div>
                           </div>
                       </div>
                       <div>
@@ -189,13 +338,15 @@
                       </div>
                   </div>
                   <div class="grid-item grid2" >
-                      <div class="content_analytic">
-                          <div class="content_analytic--name">
+                      <div class="item_header">
+                          <div class="item_header_name">
                               golbal heatmap
                           </div>
-                          <div class="content_analytic--time">
-                              <p>1 Dec - 20 Jan</p>
-                              <img src="./images/DropdownIcon.png" alt="">
+                          <div class="item_header_toolbox">
+                              <div class="dropdown">
+                                  <p>1 Dec - 20 Jan</p>
+                                  <img src="./images/DropdownIcon.png" alt="">
+                              </div>
                           </div>
                       </div>
                       <div>
@@ -216,22 +367,26 @@
               <div class="grid-chart">
                   <div class="grid-chart-item">
                       <div class="grid-chart-item-group">
-                          <div class="chart1">
-                              <div class="content_chart">
-                                  <div class="content_chart--name">
+                          <div class="item">
+                              <div class="item_header">
+                                  <div class="item_header_name">
                                       customer growth
                                   </div>
-                                  <div class="content_chart--setting">
+                                  <div class="item_header_toolbox">
                                       <img src="./images/setting.png" width="100%" alt="">
                                       <div class="icon_dot">
-                                          <div class="dot"></div>
-                                          <div class="dot"></div>
-                                          <div class="dot"></div>
-                                          <div class="dot"></div>
-                                          <div class="dot"></div>
-                                          <div class="dot"></div>
-                                          <div class="dot"></div>
-                                          <div class="dot"></div>
+                                          <div class="icon_dot_column">
+                                              <div class="dot"></div>
+                                              <div class="dot"></div>
+                                              <div class="dot"></div>
+                                              <div class="dot"></div>
+                                          </div>
+                                          <div class="icon_dot_column">
+                                              <div class="dot"></div>
+                                              <div class="dot"></div>
+                                              <div class="dot"></div>
+                                              <div class="dot"></div>
+                                          </div>
                                       </div>
                                   </div>
 
@@ -245,18 +400,22 @@
                                   </ul>
                               </div>
                           </div>
-                          <div class="chart2">
-                              <div class="content_chart">
-                                  <div class="content_chart--name">
+                          <div class="item">
+                              <div class="item_header">
+                                  <div class="item_header_name">
                                       sales data
                                   </div>
-                                  <div class="content_chart--setting">
+                                  <div class="item_header_toolbox">
                                       <img src="./images/setting.png" width="100%" alt="">
                                       <div class="icon_dot">
+                                          <div class="icon_dot_column">
                                           <div class="dot"></div>
                                           <div class="dot"></div>
                                           <div class="dot"></div>
                                           <div class="dot"></div>
+                                          </div>
+                                      </div>
+                                      <div class="icon_dot_column">
                                           <div class="dot"></div>
                                           <div class="dot"></div>
                                           <div class="dot"></div>
@@ -364,93 +523,165 @@
                       </div>
                   </div>
                   <div class="grid-chart-item2">
-                      <div class="chart5">
-                          <div class="content_chart">
-                              <div class="content_chart--name">
+                      <div class="item">
+                          <div class="item_header">
+                              <div class="item_header_name">
                                   trending locations
                               </div>
-                              <div class="content_chart--setting">
+                              <div class="item_header_toolbox">
                                   <img src="./images/setting.png" width="100%" alt="">
                                   <div class="icon_dot">
-                                      <div class="dot"></div>
-                                      <div class="dot"></div>
-                                      <div class="dot"></div>
-                                      <div class="dot"></div>
-                                      <div class="dot"></div>
-                                      <div class="dot"></div>
-                                      <div class="dot"></div>
-                                      <div class="dot"></div>
+                                      <div class="icon_dot_column">
+                                          <div class="dot"></div>
+                                          <div class="dot"></div>
+                                          <div class="dot"></div>
+                                          <div class="dot"></div>
+                                      </div>
+                                      <div class="icon_dot_column">
+                                          <div class="dot"></div>
+                                          <div class="dot"></div>
+                                          <div class="dot"></div>
+                                          <div class="dot"></div>
+                                      </div>
                                   </div>
                               </div>
                           </div>
-                          <div class="content_chart--country">
-                              <div class="country">Country</div>
-                              <div class="city">city</div>
-                              <div class="visits">visits <img src="images/DropdownIcon.png"></div>
-                          </div>
-                          <div class="content_chart--flag">
-                              <img src="images/london.png" alt="">
-                              <div class="w-90">London</div>
-                              <div>95554 <img src="images/up.png" alt=""></div>
-                          </div>
-                          <div class="content_chart--flag">
-                              <img src="images/texas.png" alt="">
-                              <div class="w-90">Texas</div>
-                              <div>93046 <img src="images/Downred.png" alt=""></div>
-                          </div>
-                          <div class="content_chart--flag">
-                              <img src="images/newDelhi.png" alt="">
-                              <div class="w-90">New Delhi</div>
-                              <div>83676 <img src="images/Downred.png" alt=""></div>
-                          </div>
-                          <div class="content_chart--flag">
-                              <img src="images/istanbul.png" alt="">
-                              <div class="w-90">Istanbul</div>
-                              <div>70443 <img src="images/up.png" alt=""></div>
-                          </div>
-                          <div class="content_chart--flag">
-                              <img src="images/braxin.png" alt="">
-                              <div class="w-90">Brasilia</div>
-                              <div>50963 <img src="images/Downred.png" alt=""></div>
-                          </div>
-                          <div class="content_chart--flag">
-                              <img src="images/dubai.png" alt="">
-                              <div class="w-90">Dubai</div>
-                              <div>45904 <img src="images/up.png" alt=""></div>
-                          </div>
-                          <div class="content_chart--flag">
-                              <img src="images/mexico.png" alt="">
-                              <div class="w-90">Mexico City</div>
-                              <div>43359 <img src="images/up.png" alt=""></div>
-                          </div>
-                          <div class="content_chart--flag">
-                              <img src="images/miami.png" alt="">
-                              <div class="w-90">Miami</div>
-                              <div>28200 <img src="images/Downred.png" alt=""></div>
-                          </div>
-                          <div class="content_chart--flag">
-                              <img src="images/Bogota.png" alt="">
-                              <div class="w-90">Bogota</div>
-                              <div>20796 <img src="images/up.png" alt=""></div>
-                          </div>
-
+                          <table>
+                              <thead>
+                                <tr >
+                                    <th>COUNTRY</th>
+                                    <th>CITY</th>
+                                    <th>
+                                        <div class="dropdown">
+                                            <p>VISIT</p>
+                                            <img src="images/DropdownIcon.png">
+                                        </div>
+                                    </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                    <td class="text-center">
+                                        <img src="images/london.png" alt="">
+                                    </td>
+                                    <td class="text-left">
+                                        <div>London</div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div >95554 <img style="padding-left: 10px"  src="images/up.png" alt=""></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <img src="images/texas.png" alt="">
+                                    </td>
+                                    <td class="text-left">
+                                        <div>Texas</div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div >93046 <img style="padding-left: 10px"  src="images/Downred.png" alt=""></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <img src="images/newDelhi.png" alt="">
+                                    </td>
+                                    <td class="text-left">
+                                        <div>New Delhi</div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div >83676 <img style="padding-left: 10px"  src="images/Downred.png" alt=""></div>
+                                    </td>
+                                </tr>
+                              </tbody>
+                              <tr>
+                                  <td class="text-center">
+                                      <img src="images/istanbul.png" alt="">
+                                  </td>
+                                  <td class="text-left">
+                                      <div>Istanbul</div>
+                                  </td>
+                                  <td class="text-center">
+                                      <div >70443 <img style="padding-left: 10px"  src="images/up.png" alt=""></div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="text-center">
+                                      <img src="images/braxin.png" alt="">
+                                  </td>
+                                  <td class="text-left">
+                                      <div>Brasilia</div>
+                                  </td>
+                                  <td class="text-center">
+                                      <div >95554 <img style="padding-left: 10px"  src="images/Downred.png" alt=""></div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="text-center">
+                                      <img src="images/dubai.png" alt="">
+                                  </td>
+                                  <td class="text-left">
+                                      <div>Dubai</div>
+                                  </td>
+                                  <td class="text-center">
+                                      <div >45904 <img style="padding-left: 10px"  src="images/up.png" alt=""></div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="text-center">
+                                      <img src="images/mexico.png" alt="">
+                                  </td>
+                                  <td class="text-left">
+                                      <div>Mexico City</div>
+                                  </td>
+                                  <td class="text-center">
+                                      <div >43359 <img style="padding-left: 10px"  src="images/up.png" alt=""></div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="text-center">
+                                      <img src="images/miami.png" alt="">
+                                  </td>
+                                  <td class="text-left">
+                                      <div>Miami</div>
+                                  </td>
+                                  <td class="text-center">
+                                      <div >28200 <img style="padding-left: 10px"  src="images/Downred.png" alt=""></div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="text-center">
+                                      <img src="images/Bogota.png" alt="">
+                                  </td>
+                                  <td class="text-left">
+                                      <div>Bogota</div>
+                                  </td>
+                                  <td class="text-center">
+                                      <div >20796 <img style="padding-left: 10px"  src="images/up.png" alt=""></div>
+                                  </td>
+                              </tr>
+                          </table>
                       </div>
                       <div class="chart7">
-                          <div class="content_chart">
-                              <div class="content_chart--name">
+                          <div class="item_header">
+                              <div class="item_header_name">
                                   revenue
                               </div>
-                              <div class="content_chart--setting">
+                              <div class="item_header_toolbox">
                                   <img src="./images/setting.png" width="100%" alt="">
                                   <div class="icon_dot">
-                                      <div class="dot"></div>
-                                      <div class="dot"></div>
-                                      <div class="dot"></div>
-                                      <div class="dot"></div>
-                                      <div class="dot"></div>
-                                      <div class="dot"></div>
-                                      <div class="dot"></div>
-                                      <div class="dot"></div>
+                                      <div class="icon_dot_column">
+                                          <div class="dot"></div>
+                                          <div class="dot"></div>
+                                          <div class="dot"></div>
+                                          <div class="dot"></div>
+                                      </div>
+                                      <div class="icon_dot_column">
+                                          <div class="dot"></div>
+                                          <div class="dot"></div>
+                                          <div class="dot"></div>
+                                          <div class="dot"></div>
+                                      </div>
                                   </div>
                               </div>
                           </div>
