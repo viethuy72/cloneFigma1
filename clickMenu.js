@@ -13,5 +13,3 @@ MenuIcon.onclick = () =>{
     //     navbar.classList.add("d-none")
     // }
 }
-
-// navbar có tồn tại thì navbar.classList.Toggle (d-none)
