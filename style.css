@@ -16,6 +16,17 @@ input {
     border: none;
     outline: none;
     cursor: pointer;
+
+}
+select{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7F8694;
+    /*padding-right: 12px;*/
 }
 .d-none {
     display: none !important;
@@ -225,6 +236,13 @@ body {
 .navbar_company--group {
     display: flex;
 }
+.navbar_company--group .navbar_company--staff1 select{
+    padding-right: 12px;
+}
+.navbar_company--group .navbar_company--staff2 select{
+    padding-right: 12px;
+}
+
 .navbar_company--staff1 {
     margin-top: 10px;
     margin-left: 28px;
@@ -988,6 +1006,8 @@ button {
     gap: 10px;
     border-radius: 5px;
     padding: 9px 12px;
+    width: 114px;
+    height: 31px;
 }
 
 .icon_dot_column {
@@ -1209,7 +1229,6 @@ td {
     }
 
 
-
 }
 
 @media screen and (max-width: 480px)  {
@@ -1221,9 +1240,7 @@ td {
         align-items: center;
         justify-content: space-between;
         gap: 6px;
-        /*padding: 2px 5px;*/
     }
-
 
     .item_header_name {
         font-weight: 600;
@@ -1258,10 +1275,6 @@ td {
     }
     .chart3_title-group {
         display: none;
-        /*justify-content: center;*/
-        /*align-items: center;*/
-        /*margin-right: 29px;*/
-
     }
 
     .item_header .item_header-date{
@@ -1316,8 +1329,6 @@ td {
         padding-left: 0;
         padding-right: 0;
         gap: 31px;
-
-
     }
     .grid-chart {
         width: 390px;
@@ -1327,7 +1338,6 @@ td {
         padding-left: 0;
         padding-right: 0;
     }
-
     .grid2 {
         border: 1px solid #dde3e9;
     }
@@ -1395,7 +1405,7 @@ td {
         height: 30px;
     }
     .navbar {
-        height: calc(100% + 74px);
+        height: calc(100% + 100px);
         width: 378px;
         border: none;
     }
@@ -1438,6 +1448,7 @@ td {
         right: 0;
         justify-content: center;
         margin-right: 2px;
+
     }
     .view_more button {
         background-color: #fff;
@@ -1478,7 +1489,7 @@ td {
     .view_more {
         display: flex;
         position: absolute;
-        top: 150px;
+        top: 115px;
         left: 0;
         right: 0;
         justify-content: center;
