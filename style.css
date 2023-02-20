@@ -509,6 +509,12 @@ button {
     letter-spacing: 0.1em;
     color: #6f6f6f;
 }
+.fix_height{
+    height: 50px;
+    margin-top: 18px;
+}
+
+
 .chart1 .content_chart .content_chart--setting,
 .chart2 .content_chart .content_chart--setting,
 .chart5 .content_chart .content_chart--setting,
@@ -715,7 +721,7 @@ button {
     display: grid;
 }
 .trending {
-    height: 402px;
+    height: 416px;
 }
 
 .flex-center {
@@ -723,6 +729,7 @@ button {
     justify-content: center;
     align-items: center;
 }
+
 
 .chart3 {
     height: 364px;
@@ -773,8 +780,8 @@ button {
     background: #F8FAFC;
     border: 1px solid #dce7f1;
     border-radius: 3px;
-    width: 23px;
-    height: 23px;
+    width: 18px;
+    height: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
