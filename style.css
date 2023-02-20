@@ -592,7 +592,7 @@ button {
 }
 
 .chart7 {
-    height: 114px;
+    height: 130px;
     background: #ffffff;
     border: 1.5px solid #edf1f4;
     border-radius: 5px;
@@ -634,7 +634,7 @@ button {
     margin-left: 15px;
 }
 .content_chart--item2 {
-    padding-left: 64px;
+    padding-right: 24px;
 }
 
 .content {
@@ -741,6 +741,9 @@ button {
     top: 4px;
     right: 0;
 }
+.analytic2{
+    display: none;
+}
 
 .chart3_title-group {
     display: flex;
@@ -749,11 +752,11 @@ button {
     margin-right: 29px;
 }
 .chart3_title-icons {
-    background: #edf1f4;
+    background: #F8FAFC;
     border: 1px solid #dce7f1;
     border-radius: 3px;
-    width: 18px;
-    height: 18px;
+    width: 23px;
+    height: 23px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1058,6 +1061,7 @@ td {
         column-gap: 1.375rem;
         padding-left: 1rem;
         padding-right: 1rem;
+        gap:20px;
     }
 
     .grid-chart-item {
@@ -1074,6 +1078,9 @@ td {
     }
     .grid-chart-item2 {
         display: grid;
+        gap: 20px;
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
     .chart3 {
         height: 364px;
@@ -1142,10 +1149,33 @@ td {
         line-height: 16px;
     }
     .content_chart--year{
-        padding-left: 0;
-        padding-top: 0;
+        padding-left: 18px;
+        padding-top: 10px;
     }
-
+    .navbar_input--location,
+    .navbar_input--dateRanger{
+        width: 97%;
+    }
+    .navbar_toggle {
+        margin-top: 32px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 35px;
+    }
+    .navbar_company--group {
+        display: flex;
+        justify-content: center;
+    }
+    .button{
+        width: 99%;
+    }
+    .navbar_company {
+        display: flex;
+        justify-content: center;
+    }
+    .text-left {
+        text-align: center;
+    }
 
 }
 @media screen and (min-width: 481px) and (max-width: 1048px) {
@@ -1233,6 +1263,7 @@ td {
         /*margin-right: 29px;*/
 
     }
+
     .item_header .item_header-date{
         display: flex;
     }
@@ -1419,32 +1450,43 @@ td {
         border: 1.5px solid #0094ff;
         border-radius: 5px;
     }
-    /*.footer {*/
-    /*    position: fixed;*/
-    /*    bottom: 1px;*/
-    /*    left: 0;*/
-    /*    display: flex;*/
-    /*    justify-content: space-evenly;*/
-    /*    align-items: center;*/
-    /*    width: 100%;*/
-    /*    height: 44px;*/
-    /*    background: #ffffff;*/
-    /*    border: 1.5px solid #0094ff;*/
-
-    /*}*/
     .chart3_title,
     .chart3_group,
     .chart3_group-content {
         width: 690px;
     }
-    /*.content_chart--year{*/
-    /*    padding-left: 9px;*/
-    /*    padding-top: 10px;*/
-    /*}*/
-    /*.content_chart--item2 {*/
-    /*    padding-left: 0;*/
-    /*    padding-right: 32px;*/
-    /*}*/
+    .navbar_input--location, .navbar_input--dateRanger {
+        width: 80%;
+    }
+    .navbar_toggle {
+         margin-top: 32px;
+        display: flex;
+        justify-content: flex-start;
+         gap: 35px;
+    }
+    .navbar_company {
+        display: flex;
+        justify-content: start;
+    }
+    .navbar_company--group {
+        display: flex;
+        justify-content: start;
+    }
+    .button {
+        width: 90%;
+    }
+    .view_more {
+        display: flex;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        margin-right: 2px;
+    }
+
+
+
 }
 
 @media (max-width: 780px) {
