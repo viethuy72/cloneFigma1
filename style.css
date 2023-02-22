@@ -366,6 +366,8 @@ button {
     max-width: 100%;
     position: fixed;
     top: 0;
+    right: 0;
+    left: 360px;
     z-index: 1000;
     background-color: #ffffff;
 }
@@ -381,7 +383,7 @@ button {
     justify-content: space-between;
     border: 1px solid #b9b9b9;
     border-left: none;
-    width: 1081px;
+    width: 100%;
     height: 78px;
 }
 .header_image > img {
@@ -676,10 +678,10 @@ button {
     background-color: #f5f5f5;
     padding-left: 17.35px;
     padding-top: 20px;
-    /*grid-template-columns: auto auto;*/
+    width: 95%;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: stretch;
-    /*grid-template-rows: 364px;*/
+
 }
 .grid-item {
     text-align: center;
@@ -700,6 +702,7 @@ button {
     column-gap: 1.375rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    width: 95%;
 }
 
 .grid-chart-item {
@@ -1063,9 +1066,13 @@ td {
     line-height: 15px;
     letter-spacing: 0.1em;
 }
+.th_visit{
+    display: flex;
+    justify-content: center;
+}
 
 /*--------------------------------------------responsive < 1400px>---------------------------------------*/
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
     .navbar--desktop {
         display: none;
     }
@@ -1106,7 +1113,8 @@ td {
         column-gap: 1.375rem;
         padding-left: 1rem;
         padding-right: 1rem;
-        gap:20px;
+        gap: 20px;
+        width: 100%;
     }
 
     .grid-chart-item {
@@ -1240,26 +1248,19 @@ td {
         justify-items: end;
     }
     .grid-chart {
-
-        overflow: scroll;
-        display: flex;
-        flex-direction: column;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .grid-chart {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        background-color: #f5f5f5;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 1.375rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 20px;
         width: 100%;
-        gap:35px;
     }
-
-
-
 
 }
 
-@media screen and (max-width: 480px)  {
+@media screen and (max-width: 768px)  {
     .navbar--desktop {
         display: none;
     }
@@ -1410,6 +1411,7 @@ td {
     .chart3 {
         max-width: 100%;
         overflow-x: scroll;
+        height: 280px;
     }
     .chart7 {
         height: 114px;
