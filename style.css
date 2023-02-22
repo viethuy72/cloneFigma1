@@ -39,7 +39,8 @@ body {
 }
 .container {
     display: flex;
-    max-width: 1440px;
+    /*max-width: 1440px;*/
+    width: 100%;
     justify-content: center;
 }
 
@@ -799,6 +800,22 @@ button {
     border: 1px solid #dce7f1;
     padding-left: 20px;
 }
+.chart3_item1 select,
+.chart3_item2 select,
+.chart3_item3 select,
+.chart3_item4 select,
+.chart3_item5 select{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #6F6F6F;
+    text-transform: uppercase;
+}
+
+
+
+
 .chart3_item1,
 .chart3_item2,
 .chart3_item3,
@@ -905,9 +922,10 @@ button {
 
 .chart3_content1 {
     margin-right: 45.76px;
+    padding-right: 12px;
 }
 .chart3_content2 {
-    margin-right: 32px;
+    margin-right: 25px;
 }
 .chart3_content3 {
     margin-right: 33px;
@@ -1203,6 +1221,9 @@ td {
     .text-left {
         text-align: center;
     }
+    .chart3_group-content{
+        padding-left: 58px;
+    }
 
 }
 @media screen and (min-width: 481px) and (max-width: 1048px) {
@@ -1218,8 +1239,6 @@ td {
         align-items: center;
         justify-items: end;
     }
-
-
     .grid-chart {
 
         overflow: scroll;
@@ -1234,6 +1253,8 @@ td {
         width: 100%;
         gap:35px;
     }
+
+
 
 
 }
@@ -1258,6 +1279,9 @@ td {
         margin-top: 2px;
         padding-left: 0;
         padding-top: 0;
+    }
+    .fix_height{
+        padding-top: 18px;
     }
     .chart3_title-icons {
         background: #edf1f4;
@@ -1521,3 +1545,8 @@ td {
         border: 1.5px solid #0094ff;
     }
 }
+
+
+/*Header full 100% */
+/*Navbar kịch sang bên trái*/
+
